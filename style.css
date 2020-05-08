@@ -115,9 +115,7 @@ button:focus{
     top:495px;
 }
 
-i{
-    color:red;
-    font-size:1.8rem;
+.icon{
     margin-right:7px;
     vertical-align:middle;
 }
