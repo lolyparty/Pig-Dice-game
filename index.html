@@ -8,7 +8,30 @@
     <title>Dicey - Pig Game</title>
 </head>
 <body>
+     <!------------------------------------------------------------How to play---------------------------------------------------------------------------->
+    <div class="howtoplay">
+        <br />
+        <hr>
+        <br />
+        
+        <p id="note">Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+            <ul>
+                <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+            </ul>
+            <br />
+            The first player to score 100 or more points wins.
+           
+            <br />
+            <br />
+            The winning score can be changed from the default score of 100 to your preferred score by setting it in the 'Final Score' input.
+        </p>
+        <br />
+        <button id="start">Start Game</button>
+    </div>
     <div class="container">
+        <img src="img/instruction.png" alt="instruction" id="instruction" />
         
             <div class="player player-0-panel active">
                 <div class="name " id="player-0-name">PLAYER 1</div>
