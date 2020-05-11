@@ -1,3 +1,21 @@
+//Game Play Modal
+document.querySelector('#instruction').style.display = 'none';
+
+function gamePlayInst(){
+    document.querySelector('.howtoplay').style.display = 'none';
+    document.querySelector('#instruction').style.display = 'block';
+}
+
+document.querySelector('#start').addEventListener('click', gamePlayInst);
+
+function instructclick(){
+    document.querySelector('.howtoplay').style.display = 'block';
+    document.querySelector('#instruction').style.display = 'none';
+}
+
+document.querySelector('#instruction').addEventListener('click',instructclick);
+
+//Dice gameplay
 var score, activePlayer, roundScore, gamePlaying;
 
 score = [0,0];
