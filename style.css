@@ -14,6 +14,58 @@ body{
     position:relative;
 }
 
+ .howtoplay{
+        background:white;
+        position:absolute;
+        min-width: 300px;    
+        top:1%;
+        z-index:1;
+        padding:30px;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        animation: modal 1.5s ease-in 1 normal; 
+    }
+
+    @keyframes modal{
+        0%{
+            opacity:0;
+            top:-10%;
+        }
+        50%{
+            opacity:0.5;
+            top:25%;
+        }
+        100%{
+            opacity:1;
+            top:50%;
+        }
+    }
+
+    .close{
+        float:right;
+    }
+
+    #xclose{
+        height:20px;
+        width:20px;
+        cursor: pointer;
+    }
+
+    #start{
+        background:#7a9dff;
+        color:white;
+        font-size:1rem;
+        border-radius:5px;
+        height:40px;
+        padding:5px;
+    }
+
+    #instruction{
+        position:absolute;
+        float:left;
+        margin:10px;
+    }
 
 .container{
     position:absolute;
