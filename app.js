@@ -1,9 +1,13 @@
 //Game Play Modal
+window.addEventListener('load', ()=>{
+    document.querySelector('.container').style.pointerEvents = 'none';
+})
 document.querySelector('#instruction').style.display = 'none';
 
 function gamePlayInst(){
     document.querySelector('.howtoplay').style.display = 'none';
     document.querySelector('#instruction').style.display = 'block';
+    document.querySelector('.container').style.pointerEvents = 'auto';
 }
 
 document.querySelector('#start').addEventListener('click', gamePlayInst);
@@ -11,6 +15,7 @@ document.querySelector('#start').addEventListener('click', gamePlayInst);
 function instructclick(){
     document.querySelector('.howtoplay').style.display = 'block';
     document.querySelector('#instruction').style.display = 'none';
+    document.querySelector('.container').style.pointerEvents = 'none';
 }
 
 document.querySelector('#instruction').addEventListener('click',instructclick);
